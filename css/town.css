@@ -1,0 +1,172 @@
+.sun {
+    animation: sun 2000s linear infinite;
+    transform-origin: 50% 500%;
+  }
+  
+  .cloud--back {
+    animation: cloudback 300s linear infinite;
+  }
+  
+  .cloud--mid {
+    animation: cloudmid 250s linear infinite;
+  }
+  
+  .cloud--front {
+    animation: cloudfront 150s linear infinite;
+  }
+  
+  
+  .van--left {
+    transform: translate(-411px, 0);
+    animation: vanleft 25s ease-in-out infinite;
+  }
+  
+  .van--right {
+    transform: scale(-1, 1) translateX(-159px);
+    animation: vanright 15s 5s linear infinite;
+  }
+  
+  .lorry {
+    transform: translate(-186px, 0);
+    animation: lorry 25s 10s linear infinite;
+  }
+  
+  @keyframes vanleft {
+    0% {
+      transform: translate(-411px, 0);
+    }
+    10% {
+      transform: translate(-321px, 0);
+    }
+    20% {
+      transform: translate(-321px, 0);
+    }
+    50% {
+      transform: translate(165px, 0);
+    }
+    60% {
+      transform: translate(165px, 0);
+    }
+    75% {
+      transform: translate(408px, 0);
+    }
+    100% {
+      transform: translate(408px, 0);
+    }
+  }
+  
+  @keyframes lorry {
+    0% {
+      transform: translate(-186px, 0);
+    }
+    80% {
+      transform: translate(666px, 0);
+    }
+    100% {
+      transform: translate(666px, 0);
+    }
+  }
+  
+  @keyframes vanright {
+    0% {
+      transform: scale(-1, 1) translateX(-159px);
+    }
+    75% {
+      transform: scale(-1, 1) translateX(653px);
+    }
+    100% {
+      transform: scale(-1, 1) translateX(653px);
+    }
+  }
+  
+  @keyframes cloudback {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(596px);
+    }
+    61% {
+      opacity: 0;
+      transform: translateX(596px);
+    }
+    89% {
+      opacity: 0;
+      transform: translateX(-210px);
+    }
+    90% {
+      opacity: 1;
+      transform: translateX(-210px);
+    }
+  }
+  
+  @keyframes cloudmid {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    20% {
+      opacity: 1;
+      transform: translateX(220px);
+    }
+    21% {
+      opacity: 0;
+      transform: translateX(220px);
+    }
+    25% {
+      opacity: 0;
+      transform: translateX(-596px);
+    }
+    26% {
+      opacity: 1;
+      transform: translateX(-596px);
+    }
+  }
+  
+  @keyframes cloudfront {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    3% {
+      opacity: 1;
+      transform: translateX(25px);
+    }
+    4% {
+      opacity: 0;
+      transform: translateX(25px);
+    }
+    5% {
+      opacity: 0;
+      transform: translateX(-803px);
+    }
+    6% {
+      opacity: 1;
+      transform: translateX(-803px);
+    }
+  }
+  
+  @keyframes sun {
+    0% {
+      opacity: 1;
+      transform: rotate(0);
+    }
+    23% {
+      opacity: 0.7;
+      transform: rotate(9deg);
+    }
+    23.1% {
+      opacity: 0;
+      transform: rotate(9deg);
+    }
+    23.2% {
+      opacity: 0;
+      transform: rotate(-28deg);
+    }
+    23.3% {
+      opacity: 1;
+      transform: rotate(-28deg);
+    }
+  }

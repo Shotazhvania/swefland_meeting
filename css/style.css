@@ -305,4 +305,7 @@ body {
    .wrapper{
     padding-top: 25px !important;
    }
+   svg{
+    margin-top: 3rem;
+   }
   }
